@@ -23,12 +23,12 @@ public class FacebookExample {
     @SuppressWarnings("PMD.SystemPrintln")
     public static void main(String... args) throws IOException, InterruptedException, ExecutionException {
         // Replace these with your client id and secret
-        final String clientId = "your client id";
-        final String clientSecret = "your client secret";
+        final String clientId = "575354043069378";
+        final String clientSecret = "3a918902a33dbb334ee40ff6617d2b81";
         final String secretState = "secret" + new Random().nextInt(999_999);
         final OAuth20Service service = new ServiceBuilder(clientId)
                 .apiSecret(clientSecret)
-                .callback("http://www.example.com/oauth_callback/")
+                .callback("https://jam.askjuno.com:8443/login/facebook")
                 .build(FacebookApi.instance());
 
         final Scanner in = new Scanner(System.in, "UTF-8");
