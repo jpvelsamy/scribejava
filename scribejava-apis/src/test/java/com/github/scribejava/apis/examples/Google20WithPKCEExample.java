@@ -27,13 +27,13 @@ public class Google20WithPKCEExample {
     @SuppressWarnings("PMD.SystemPrintln")
     public static void main(String... args) throws IOException, InterruptedException, ExecutionException {
         // Replace these with your client id and secret
-        final String clientId = "your client id";
-        final String clientSecret = "your client secret";
+        final String clientId = "705099353658-rghjmk39n95am9j7bnjg4283eb7dcvgj.apps.googleusercontent.com";
+        final String clientSecret = "y-EmN_1yjLLYCs5Dn8TD3gAj";
         final String secretState = "secret" + new Random().nextInt(999_999);
         final OAuth20Service service = new ServiceBuilder(clientId)
                 .apiSecret(clientSecret)
                 .defaultScope("profile") // replace with desired scope
-                .callback("http://example.com/callback")
+                .callback("https://jam.askjuno.com:8443/login/google")
                 .build(GoogleApi20.instance());
 
         final Scanner in = new Scanner(System.in, "UTF-8");

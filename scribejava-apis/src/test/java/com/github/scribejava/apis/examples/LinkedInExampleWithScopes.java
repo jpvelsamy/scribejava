@@ -23,12 +23,12 @@ public class LinkedInExampleWithScopes {
     @SuppressWarnings("PMD.SystemPrintln")
     public static void main(String... args) throws IOException, InterruptedException, ExecutionException {
         //  Replace these with your client id and secret
-        final String clientId = "your client id";
-        final String clientSecret = "your client id";
+        final String clientId = "81sxa9dh2m6y5b";
+        final String clientSecret = "yS0Cb3UJ6FdmVVS5";
 
         final OAuth10aService service = new ServiceBuilder(clientId)
                 .apiSecret(clientSecret)
-                .build(LinkedInApi.instance("foo", "bar", "baz"));
+                .build(LinkedInApi.instance("r_emailaddress", "r_basicprofile", "r_ads"));
         final Scanner in = new Scanner(System.in);
 
         System.out.println("=== LinkedIn's OAuth Workflow ===");

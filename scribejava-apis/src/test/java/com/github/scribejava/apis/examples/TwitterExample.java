@@ -21,8 +21,8 @@ public class TwitterExample {
 
     @SuppressWarnings("PMD.SystemPrintln")
     public static void main(String... args) throws IOException, InterruptedException, ExecutionException {
-        final OAuth10aService service = new ServiceBuilder("your client id")
-                .apiSecret("your client secret")
+        final OAuth10aService service = new ServiceBuilder("h6SMWpCR0SznGxFePd1W9HSRD")
+                .apiSecret("VCaHLZaUwjh0ZlrBeKb6sIpcL4MfZ3trezT0wNCWjeuVkjVfMB")
                 .build(TwitterApi.instance());
         final Scanner in = new Scanner(System.in);
 
