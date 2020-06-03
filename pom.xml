@@ -146,8 +146,10 @@
                 <version>3.8.1</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <release>${java.release}</release>
                     <showDeprecation>true</showDeprecation>
+		    <source>1.8</source>
+		    <target>1.8</target>
+		    <verbose>true</verbose>
                 </configuration>
             </plugin>
             <plugin>
